@@ -102,7 +102,7 @@ export default {
       )[this.form.currentStageIndex];
 
       if (currentStageEl) {
-        const BUFFER = 40;
+        const BUFFER = 60;
         this.$refs.wrapper.style.height = currentStageEl.clientHeight + BUFFER + 'px';
       }
     },
@@ -126,6 +126,7 @@ export default {
   align-items: center;
   justify-content: flex-start;
   width: 100vw;
+  min-height: 230px;
   transform: translateX(0vw);
   transition: transform 1.75s ease;
 
