@@ -47,7 +47,7 @@ const numberField = new FormField({
 });
 ```
 
-We can also pass validators into our fields, DynamicForm provides a few out of the box but we can also add write our own.
+We can also pass validators into our fields, DynamicForm provides a few out of the box but we can also  write our own.
 
 ```
 import {
@@ -84,7 +84,7 @@ const alwaysInvalidField = new FormField({
 });
 ```
 
-Once we've instantiated the fields that we want, we instantiate stages to our flow like so:
+Once we've instantiated the fields that we want, we can add stages to our flow like so:
 
 ```
 import FormStage from '@dynamic-form';
