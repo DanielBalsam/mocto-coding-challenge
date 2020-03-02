@@ -1,5 +1,8 @@
 <template>
-  <div class="button-tray">
+  <div
+    :class="{'button-tray--hide': !showButtons}"
+    class="button-tray"
+  >
     <button
       :tabindex="firstStage ? -1 : undefined"
       :class="{'button-tray__button--hide': firstStage}"
@@ -11,8 +14,6 @@
       Back
     </button>
     <button
-      :tabindex="lastStage ? -1 : undefined"
-      :class="{'button-tray__button--hide': lastStage}"
       :aria-busy="loading"
       :form="formId"
       :disabled="loading"
@@ -56,6 +57,11 @@ export default {
       type: Boolean,
       default: false,
     },
+
+    showButtons: {
+      type: Boolean,
+      default: true,
+    }
   },
 }
 </script>
@@ -66,10 +72,17 @@ export default {
   justify-content: center;
   width: 90%;
   margin-top: 30px;
+  opacity: 1;
+  transition: opacity 1s ease;
 
   .spinner {
     filter: brightness(150%);
   }
+}
+
+.button-tray--hide {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .button-tray__button {

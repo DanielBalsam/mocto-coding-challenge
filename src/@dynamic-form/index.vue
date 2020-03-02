@@ -19,11 +19,11 @@
       />
     </form>
     <ButtonTray
-      v-if="activeStage.showButtons"
       :loading="form.loading"
       :first-stage="form.currentStageIndex === 0"
       :last-stage="form.currentStageIndex === form.stages.length - 1"
       :form-id="formId"
+      :show-buttons="activeStage.showButtons"
       @back="form.goBack()"
       @submit="form.goForward()"
     />
