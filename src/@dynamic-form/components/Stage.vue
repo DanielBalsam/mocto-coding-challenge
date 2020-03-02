@@ -97,7 +97,7 @@ export default {
 .form-stage__title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 26px;
   letter-spacing: 0.1em;
   margin-bottom: 10px;
 }
