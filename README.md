@@ -1,6 +1,6 @@
-# MOCTO Coding Challenge
+# Coding Challenge
 
-A signup form for the MOCTO coding challenge.
+A signup form for a coding challenge.
 
 ## Project Setup
 
